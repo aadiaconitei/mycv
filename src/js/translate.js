@@ -3,31 +3,32 @@ async function fetchLanguageData(lang) {
     const response = await fetch(`lang/${lang}.json`);
     return response.json();
 }
-
 // Function to set the language preference
 function setLanguagePreference(lang) {
     localStorage.setItem('language', lang);
 
     //location.reload();
 }
-
 // Function to update content based on selected language
 function updateContent(langData) {
     document.querySelectorAll('[data-tr]').forEach(element => {
         const key = element.getAttribute('data-tr');
         element.textContent = langData[key];
     });
-    document.querySelectorAll('[data-typed-tr]').forEach(element => {
-        const key = element.getAttribute('data-typed-tr');
+    document.querySelectorAll('[data-attr-tr]').forEach(element => {
+        const key = element.getAttribute('data-attr-tr');
         element.setAttribute('data-typed-items', langData[key]);
+        element.setAttribute('placeholder', langData[key]);
+        
     });
+    
 
 
 }
 
 // Function to change language
 // !!!Ca sa o putem folosi in fisierul HTML se declara cu window
-window.changeLanguage = function (lang) {
+window.changeLanguage = function (lang, ) {
     console.log('limba aleasa', lang);
     setLanguagePreference(lang);
 
