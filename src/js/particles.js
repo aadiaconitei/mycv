@@ -1,5 +1,10 @@
 /* ---- particles.js config ---- */
 
+function getParticlesColor() {
+    const rootStyles = getComputedStyle(document.documentElement);
+    return rootStyles.getPropertyValue("--particle-color").trim();
+}
+
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -10,19 +15,19 @@ particlesJS("particles-js", {
             }
         },
         "color": {
-            "value": "#04b962"
+            "value": getParticlesColor()
         },
         "shape": {
             "type": "circle",
             "stroke": {
-                "width": 3,
+                "width": 0,
                 "color": "#000000"
             },
             "polygon": {
                 "nb_sides": 5
             },
             "image": {
-                "src": "img/github.svg",
+                "src": "images/ro.svg",
                 "width": 100,
                 "height": 100
             }
@@ -38,7 +43,7 @@ particlesJS("particles-js", {
             }
         },
         "size": {
-            "value": 3,
+            "value": 6,
             "random": true,
             "anim": {
                 "enable": false,
@@ -110,4 +115,5 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+
 
