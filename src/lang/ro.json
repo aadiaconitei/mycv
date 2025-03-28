@@ -6,5 +6,7 @@
     "meniu.portfolio": "Portofoliu",
     "meniu.github": "Github -ul meu",
     "meniu.contact": "Contact",
-    "typed": "Profesor, Formator, Developer, Freelancer, Designer"
+    "typed": "Profesor, Formator, Developer, Freelancer, Designer",
+    "ct.place.name": "Nume",
+    "ct.place.message": "Mesaj"
 }
