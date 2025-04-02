@@ -8,5 +8,6 @@
     "meniu.contact": "Contact",
     "typed": "Profesor, Formator, Developer, Freelancer, Designer",
     "ct.place.name": "Nume",
-    "ct.place.message": "Mesaj"
+    "ct.place.message": "Mesaj",
+    "porto.pr2": "Pozitia descrierii poate fi setat in diverse pozitii top, bottom, left or right"
 }

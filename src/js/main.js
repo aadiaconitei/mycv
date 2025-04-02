@@ -1,7 +1,7 @@
 import $ from 'jquery';
 // create global $ and jQuery variables
 global.$ = global.jQuery = $;
-import GLightbox from 'glightbox';
+
 
 (function () {
     "use strict";
@@ -181,12 +181,7 @@ import GLightbox from 'glightbox';
         }
     }, 2000);
 
-    /**
-     * Initiate portfolio lightbox 
-     */
-    const portfolioLightbox = GLightbox({
-        selector: '.portfolio-lightbox'
-    });
+
 
 
     /**
